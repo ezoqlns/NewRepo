@@ -1,0 +1,13 @@
+resources:
+-name: mck_pipeline
+ type: git
+ source: 
+   uri: https://github.com/ezoqlns/NewRepo.git
+   branch: master
+
+jobs: 
+- name: pull_resources_ATMc
+  plan: 
+  - get: mck_pipeline
+  - task: task_pull
+    file: mck_pipeline/output.yml
