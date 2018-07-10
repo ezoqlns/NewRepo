@@ -3,11 +3,11 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: (repository: busybox)
+  source: {repository: busybox}
 
 inputs:
 - name: mck_pipeline
 
 run:
   path: ls
-  args:  [-laRt]	
+  args: [-laRt]	

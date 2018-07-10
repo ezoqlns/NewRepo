@@ -1,9 +1,9 @@
 resources:
--name: mck_pipeline
- type: git
- source: 
-   uri: https://github.com/ezoqlns/NewRepo.git
-   branch: master
+- name: mck_pipeline
+  type: git
+  source: 
+    uri: https://github.com/ezoqlns/NewRepo.git
+    branch: master
 
 jobs: 
 - name: pull_resources_ATMc
